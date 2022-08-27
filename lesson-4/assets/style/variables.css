@@ -1,0 +1,16 @@
+:root {
+  --c-light: #ccc;
+  --c-white: #fff;
+  --c-black: #333;
+  --c-orange: #ff4500;
+  --c-blue: #0000ff;
+  --c-grey: #808080;
+}
+/* TODO */
+/* ! Delete in the future */
+/* a[href="#"] {
+  background-color: red;
+} */
+a {
+  display: inline-block;
+}

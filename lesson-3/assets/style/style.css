@@ -1,0 +1,87 @@
+:root {
+  --c-orange: #ff4700;
+  --c-white: #fff;
+  --c-light: #ddd;
+  --c-grey: #333;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid; */
+}
+body {
+  background: linear-gradient(to bottom, var(--c-light), var(--c-white) 100px);
+  font-family: sans-serif;
+  color: var(--c-grey);
+  min-height: 100vh;
+}
+a {
+  display: inline-block;
+}
+a:hover {
+  color: var(--c-orange);
+}
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* Language */
+.language {
+  border-bottom: 1px solid var(--ddd);
+  padding: 0 15px;
+}
+.language-link {
+  display: inline-block;
+  padding: 10px 15px;
+}
+/* Breadcrumb */
+.breadcrumb {
+  margin-bottom: 10px;
+}
+
+.breadcrumb-list li {
+  display: inline-block;
+}
+.breadcrumb-link {
+  display: inline-block;
+  padding: 10px 15px;
+}
+.breadcrumb-list li::after {
+  content: "/";
+  display: inline-block;
+}
+.breadcrumb-list li:last-child::after {
+  display: none;
+}
+/* Resume */
+/* Resume h1 */
+.resume-h1,
+.resume-h2 {
+  margin: 0 0 10px 0;
+  font-size: 26px;
+  text-align: center;
+}
+/* Resume image */
+.resume-image {
+  text-align: center;
+  margin-bottom: 10px;
+}
+/* Resume description */
+.resume-description {
+  margin-bottom: 10px;
+}
+.resume-description-list > li {
+  margin-bottom: 10px;
+}
+.resume-description-list > li:last-child {
+  margin: 0;
+}
+.resume-description-list,
+.resume-description-sub-list {
+  list-style: none;
+  padding-left: 20px;
+}
+.resume-description-title {
+  font-weight: bold;
+}
