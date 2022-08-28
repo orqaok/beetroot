@@ -16,5 +16,5 @@ git commit -m "<text>"
 https://github.com/cyberspacedk/Git-commands
 
 git add .
-git commit -m "add new v.0.5"
+git commit -m "test"
 git push origin main
