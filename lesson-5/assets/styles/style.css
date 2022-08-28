@@ -1,0 +1,115 @@
+/* CASTOM COLOR */
+:root {
+  --c-070707: #070707;
+  --c-828282: #828282;
+  --c-f1f1f1: #f1f1f1;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid; */
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  color: var(--c-070707);
+  font-size: 18px;
+}
+/* HEADER */
+.header {
+  margin-bottom: 15px;
+}
+.wrapper {
+  padding-right: 15px;
+  margin-right: auto;
+  padding-left: 15px;
+  margin-left: auto;
+  max-width: 1000px;
+}
+/* HEADER NAVIGATION */
+.header-navigation {
+  border-bottom: 1px solid var(--c-828282);
+  padding: 25px 0;
+}
+.navigation-list {
+  text-align: center;
+}
+.navigation-item {
+  margin-right: 40px;
+  display: inline-block;
+}
+.navigation-item:last-child {
+  margin: 0;
+}
+.navigation-link {
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--c-828282);
+  text-decoration: none;
+}
+.navigation-link:hover {
+  color: var(--c-070707);
+}
+/* TOP SECTION */
+.top-section-title {
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+.top-section-img {
+  max-width: 100%;
+}
+.top-section-img img {
+  width: 100%;
+  display: block;
+}
+/* BOTTOM SECTION */
+.bottom-section-title {
+  padding-top: 100px;
+  font-size: 34px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.bottom-section-list {
+  margin-bottom: 100px;
+  list-style: none;
+}
+.bottom-section-item {
+  margin: 0 auto;
+  max-width: 500px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.bottom-section-item:last-child {
+  margin-bottom: 0;
+}
+.bottom-section-item:nth-child(2) {
+  max-width: 400px;
+}
+.bottom-section-item:nth-child(3) {
+  max-width: 330px;
+}
+/* TO MAIN */
+.go-home-btn {
+  position: fixed;
+  top: 10px;
+  left: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border: 3px solid;
+  line-height: 50px;
+  color: var(--c-828282);
+  text-decoration: none;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--c-f1f1f1);
+  opacity: 0.6;
+}
+.go-home-btn:before {
+  content: "\1F3E0";
+  font-size: 16px;
+  margin-right: 10px;
+  display: inline-block;
+}
+.go-home-btn:hover {
+  color: var(--c-070707);
+  opacity: 1;
+}
