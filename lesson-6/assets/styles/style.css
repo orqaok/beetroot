@@ -1,18 +1,26 @@
+:root {
+  --white: #fff;
+  --blue: #3399cc;
+  --light-blue: #2b81ac;
+  --purple: #33cccc;
+}
+
 @font-face {
   font-family: "Lucida Sans Unicode";
-  src: url("/assets/fonts/lucidasansunicode.ttf") format("woff2");
+  src: url("../font/lucidasansunicode.ttf") format("woff2");
 }
 
 * {
+  /* border: 1px solid; */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 body {
   font-family: "Lucida Sans Unicode";
-  color: #ffffff;
-  background: #3399cc;
-  border: 25px solid #2b81ac;
+  color: var(--white);
+  background-color: var(--blue);
+  border: 25px solid var(--light-blue);
 }
 /* * WEATHER */
 .weather {
@@ -40,8 +48,8 @@ body {
 }
 .weather-content-block-list {
   font-size: 0;
-  border: 2px solid #fff;
-  background-color: #fff;
+  border: 2px solid var(--white);
+  background-color: var(--white);
   cursor: pointer;
 }
 /* WIDTH */
@@ -58,15 +66,15 @@ body {
   padding: 25px;
   font-size: 22px;
   display: inline-block;
-  border: 2px solid #fff;
+  border: 2px solid var(--white);
   text-align: center;
   transition: all 0.1s ease-in;
 }
 .weather-content-block-item:nth-child(1) {
-  background-color: #3399cc;
+  background-color: var(--blue);
 }
 .weather-content-block-item:nth-child(2) {
-  background-color: #33cccc;
+  background-color: var(--purple);
 }
 .weather-content-block-item:nth-child(3) {
   background-color: #996699;
@@ -116,7 +124,7 @@ body {
 .weather-content-block-description::after {
   content: "°C";
   display: inline-block;
-  margin-left: 3px;
+  padding: 0 5px;
 }
 /* WEATHER DESCRIPTION */
 .weather-description {
@@ -132,10 +140,9 @@ body {
   padding-left: 15px;
   border: 3px solid;
   line-height: 50px;
-  color: var(--c-828282);
+  color: var(--white);
   text-decoration: none;
   transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: var(--c-f1f1f1);
   opacity: 0.6;
 }
 .go-home-btn:before {
@@ -145,7 +152,6 @@ body {
   display: inline-block;
 }
 .go-home-btn:hover {
-  color: var(--c-070707);
   opacity: 1;
 }
 .weather-descriptiob {
