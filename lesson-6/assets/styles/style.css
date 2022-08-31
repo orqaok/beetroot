@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "Lucida Sans Unicode";
+  src: url("/assets/fonts/lucidasansunicode.ttf") format("woff2");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Lucida Sans Unicode";
+  color: #ffffff;
+  background: #3399cc;
+  border: 25px solid #2b81ac;
+}
+/* * WEATHER */
+.weather {
+  padding-top: 40px;
+}
+.weather-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* WEATHER TITLE */
+.weather-title {
+  display: inline-block;
+  font-size: 21px;
+  font-weight: 400;
+}
+.weather-title-block .wi {
+  font-size: 27px;
+  font-weight: 400;
+}
+/* WEATHER CONTENT */
+.weather-content-block {
+  padding: 40px 0;
+}
+.weather-content-block-list {
+  font-size: 0;
+  border: 2px solid #fff;
+  background-color: #fff;
+  cursor: pointer;
+}
+/* WIDTH */
+.w25 {
+  width: 25%;
+}
+.w50 {
+  width: 50%;
+}
+.w100 {
+  width: 100%;
+}
+.weather-content-block-item {
+  padding: 25px;
+  font-size: 22px;
+  display: inline-block;
+  border: 2px solid #fff;
+  text-align: center;
+  transition: all 0.1s ease-in;
+}
+.weather-content-block-item:nth-child(1) {
+  background-color: #3399cc;
+}
+.weather-content-block-item:nth-child(2) {
+  background-color: #33cccc;
+}
+.weather-content-block-item:nth-child(3) {
+  background-color: #996699;
+}
+.weather-content-block-item:nth-child(4) {
+  background-color: #c24747;
+}
+.weather-content-block-item:nth-child(5) {
+  background-color: #e2674a;
+}
+.weather-content-block-item:nth-child(6) {
+  background-color: #ffcc66;
+}
+.weather-content-block-item:nth-child(7) {
+  background-color: #99cc99;
+}
+.weather-content-block-item:nth-child(8) {
+  background-color: #669999;
+}
+.weather-content-block-item:nth-child(9) {
+  background-color: #cc6699;
+}
+.weather-content-block-item:nth-child(10) {
+  background-color: #339966;
+}
+.weather-content-block-item:nth-child(11) {
+  background-color: #666699;
+}
+
+.weather-content-block-list:hover .weather-content-block-item {
+  opacity: 0.6;
+}
+.weather-content-block-list .weather-content-block-item:hover {
+  opacity: 1;
+}
+.weather-content-block-item .wi {
+  font-size: 42px;
+}
+.weather-content-block-title {
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.weather-content-block-description {
+  line-height: 42px;
+  vertical-align: top;
+}
+.weather-content-block-description::after {
+  content: "°C";
+  display: inline-block;
+  margin-left: 3px;
+}
+/* WEATHER DESCRIPTION */
+.weather-description {
+  font-size: 16px;
+  margin-bottom: 100px;
+}
