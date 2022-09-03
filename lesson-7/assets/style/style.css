@@ -1,0 +1,18 @@
+:root {
+  --color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--color);
+}
+.wrapper {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header-wrapper {
+}
