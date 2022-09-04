@@ -7,37 +7,368 @@
     <title>Завдання №# – #</title>
     <!-- STYLE -->
     <link rel="stylesheet" href="../assets/style/normalize.css" />
+    <link rel="stylesheet" href="./assets/style/variables.css" />
     <link rel="stylesheet" href="./assets/style/style.css" />
     <!-- ICON -->
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=block"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="app">
-      <!-- HEADRR -->
+      <!-- * HEADER -->
       <header class="header">
         <div class="wrapper header-wrapper">
           <!-- LOGO -->
-          <div class="header-logo">logo</div>
-          <!-- NAVIGATION -->
-          <div class="header-navigation"><nav>nav</nav></div>
-          <!-- RIGHT BUTTONS -->
-          <div class="header-right-buttons">
-            <button type="button"><span>1</span></button>
-            <button type="button"><span>2</span></button>
+          <div class="logo">
+            <a href="./index.html" class="logo__link">
+              <img
+                height="32"
+                width="200"
+                src="./assets/image/logo.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <!-- MENU -->
+          <div class="menu header__menu">
+            <nav class="navigation">
+              <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">Product</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">Customers</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">Pricing</a>
+                </li>
+                <li class="navigation__item">
+                  <a href="#" class="navigation__link">Resources</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- BUTTONS -->
+          <div class="block-buttons header__block-buttons">
+            <!-- BUTTON -->
+            <button class="button header__button" type="button">
+              <span>Sign In</span>
+            </button>
+            <!-- BUTTON -->
+            <button
+              class="button header__button header__button-transparent"
+              type="button"
+            >
+              <span>Sign Up</span>
+            </button>
           </div>
         </div>
       </header>
-      <!-- CONTAINER -->
+      <!-- * CONTAINER -->
       <div class="container">
-        <div class="wrapper container-wrapper">
-          <!--  -->
+        <div class="container__wrapper">
+          <!-- BANNER -->
+          <section class="banner container__banner">
+            <div class="wrapper banner__wrapper">
+              <!-- TEXT BLOCK -->
+              <div class="text banner__text">
+                <h1 class="title-large text__title-large">
+                  The Design Thinking superpowers
+                </h1>
+                <p class="text__description text__description-m20">
+                  Tools, tutorials, design and innovation experts, all in one
+                  place! The most intuitive way to imagine your next user
+                  experience.
+                </p>
+                <div class="block-button">
+                  <!-- BUTTON -->
+                  <button class="button banner__button" type="button">
+                    <span>Get started</span>
+                  </button>
+                </div>
+              </div>
+              <div class="block-image banner__block-image">
+                <img src="./assets/image/banner.png" alt="" />
+              </div>
+            </div>
+          </section>
+          <section class="advantage container__advantage">
+            <div class="wrapper advantage__wrapper">
+              <div class="text advantage__text">
+                <h2 class="title-medium advantage__title-medium">
+                  We design tools to unveil <br />your superpowers
+                </h2>
+                <div class="row-items advantage__row-items">
+                  <div class="item row-items__item">
+                    <div class="item__icon item__icon-violet">
+                      <img src="./assets/image/cursor.png" alt="" />
+                    </div>
+                    <div class="item__title">
+                      <span>First click tests</span>
+                    </div>
+                    <p class="item__description">
+                      While most people enjoy casino gambling
+                    </p>
+                  </div>
+                  <div class="item row-items__item">
+                    <div class="item__icon item__icon-yellow">
+                      <img src="./assets/image/tilda.png" alt="" />
+                    </div>
+                    <div class="item__title">
+                      <span>Design surveys</span>
+                    </div>
+                    <p class="item__description">
+                      Sports betting, lottery and bingo playing for the fun
+                    </p>
+                  </div>
+                  <div class="item row-items__item">
+                    <div class="item__icon item__icon-red">
+                      <img src="./assets/image/heart.png" alt="" />
+                    </div>
+                    <div class="item__title">
+                      <span>Preference tests</span>
+                    </div>
+                    <p class="item__description">
+                      The Myspace page defines the individual
+                    </p>
+                  </div>
+                  <div class="item row-items__item">
+                    <div class="item__icon item__icon-blue">
+                      <img src="./assets/image/watch.png" alt="" />
+                    </div>
+                    <div class="item__title">
+                      <span>First click tests</span>
+                    </div>
+                    <p class="item__description">
+                      Personal choices and the overall personality of the person
+                    </p>
+                  </div>
+                </div>
+                <!-- BLOCK BUTTON -->
+                <div class="block-button advantage__block-button">
+                  <!-- BUTTON -->
+                  <button class="button advantage__button" type="button">
+                    <span>Sign up Now</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- BENEFITS -->
+          <section class="benefits container__benefits">
+            <div class="wrapper benefits__wrapper">
+              <!-- TEXT BLOCK -->
+              <div class="text benefits__text">
+                <span class="min-title">Effortless Validation for</span>
+                <h2 class="title-medium benefits__title-medium">
+                  Design Professionals
+                </h2>
+                <p class="text__description text__description-m40">
+                  The Myspace page defines the individual, his or her<br />
+                  characteristics, traits, personal choices and the overall<br />
+                  personality of the person.
+                </p>
+                <h4 class="text__sub-title text__sub-title-m10">
+                  Accessory makers
+                </h4>
+                <p class="text__description text__description-m30">
+                  While most people enjoy casino gambling, sports betting,<br />
+                  lottery and bingo playing for the fun
+                </p>
+                <h4 class="text__sub-title text__sub-title-m10">
+                  Alterationists
+                </h4>
+                <p class="text__description text__description-m30">
+                  If you are looking for a new way to promote your business
+                  that<br />
+                  won’t cost you more money,
+                </p>
+                <h4 class="text__sub-title text__sub-title-m10">
+                  Custom Design designers
+                </h4>
+                <p class="text__description">
+                  If you are looking for a new way to promote your business
+                  that<br />
+                  won’t cost you more money,
+                </p>
+              </div>
+              <!-- IMAGE BLOCK -->
+              <div class="block-image benefits__block-image">
+                <img src="./assets/image/image.jpg" alt="" />
+              </div>
+            </div>
+          </section>
+          <section class="product-managers container__product-managers">
+            <div class="wrapper product-managers__wrapper">
+              <!-- TEXT BLOCK -->
+              <div class="text product-managers__text">
+                <span class="min-title">Easier decision making for</span>
+                <h2 class="title-medium product-managers__title-medium">
+                  Product Managers
+                </h2>
+                <p class="text__description text__description-m40">
+                  The Myspace page defines the individual, his or her <br />
+                  characteristics, traits, personal choices and the overall<br />
+                  personality of the person.
+                </p>
+                <ul class="product-managers__list">
+                  <li class="product-managers__item">
+                    <span>
+                      Never worry about overpaying for your energy bill
+                      <br />again.
+                    </span>
+                  </li>
+                  <li class="product-managers__item">
+                    <span>
+                      We will only switch you to energy companies that we<br />
+                      trust and will treat you right.
+                    </span>
+                  </li>
+                  <li class="product-managers__item">
+                    <span>
+                      We track the markets daily and know where the<br />
+                      savings are.
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <!-- IMAGE BLOCK -->
+              <div class="block-image product-managers__block-image">
+                <img src="./assets/image/image2.jpg" alt="" />
+              </div>
+            </div>
+          </section>
+          <!-- MARKETERS -->
+          <section class="marketers container__marketers">
+            <div class="wrapper marketers__wrapper">
+              <!-- TEXT BLOCK -->
+              <div class="text marketers__text">
+                <span class="min-title">Optimisation for</span>
+                <h2 class="title-medium marketers__title-medium">Marketers</h2>
+                <p class="text__description text__description-m40">
+                  Few would argue that, despite the advancements of
+                  <br />feminism over the past three decades, women still face a
+                  <br />double standard when it comes to their behavior.
+                </p>
+                <h4 class="text__sub-title text__sub-title-m10">
+                  Accessory makers
+                </h4>
+                <p class="text__description text__description-m30">
+                  While most people enjoy casino gambling, sports betting,
+                  <br />
+                  lottery and bingo playing for the fun
+                </p>
+                <h4 class="text__sub-title text__sub-title-m10">
+                  Alterationists
+                </h4>
+                <p class="text__description text__description-m30">
+                  If you are looking for a new way to promote your business
+                  <br />that won’t cost you more money,
+                </p>
+                <h4 class="text__sub-title text__sub-title-m10">
+                  Custom Design designers
+                </h4>
+                <p class="text__description">
+                  If you are looking for a new way to promote your business
+                  <br />that won’t cost you more money,
+                </p>
+              </div>
+              <!-- IMAGE BLOCK -->
+              <div class="block-image marketers__block-image">
+                <img src="./assets/image/image3.jpg" alt="" />
+              </div>
+            </div>
+          </section>
         </div>
       </div>
-      <!-- FOOTER -->
+      <!-- * FOOTER -->
       <footer class="footer">
-        <div class="wrapper footer-wrapper">
-          <!--  -->
+        <div class="wrapper footer__wrapper">
+          <!-- LOGO -->
+          <div class="logo footer__logo">
+            <a href="./index.html" class="logo__link">
+              <img
+                height="32"
+                width="200"
+                src="./assets/image/logo.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <!-- FOOTER MENU -->
+          <div class="f-menu .footer__f-menu">
+            <div class="footer__title footer__title-mb30">
+              <span>Quick Links</span>
+            </div>
+            <nav class="footer__navigation">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">About Us</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Blog</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Contact</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">FAQ</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- FOOTER MENU -->
+          <div class="f-menu .footer__f-menu">
+            <div class="footer__title footer__title-mb30">
+              <span>Legal Stuff</span>
+            </div>
+            <nav class="footer__navigation">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Disclaimer</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Financing</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Privacy Policy</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Terms of Service</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- FOOTER FORM -->
+          <div class="form-block footer__form-block">
+            <div class="footer__title footer__title-mb25">
+              <label for="test"
+                >Knowing you're always on <br />the best energy deal.
+              </label>
+            </div>
+            <div class="footer__input">
+              <input
+                id="test"
+                type="text"
+                placeholder="Enter your phone Number"
+              />
+            </div>
+            <div class="block-button footer__block-button">
+              <!-- BUTTON -->
+              <button class="button footer__button" type="button">
+                <span>Sign up Now</span>
+              </button>
+            </div>
+          </div>
         </div>
+        <!--TO THE MAIN -->
+        <a href="../index.html" class="to-main-btn">На головну</a>
       </footer>
     </div>
   </body>
