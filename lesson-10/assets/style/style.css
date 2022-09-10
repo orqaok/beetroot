@@ -146,7 +146,7 @@ body {
   padding-left: 15px;
   margin-bottom: 20px;
 }
-.block:hover .block__row-icons {
+.block__wrapper:hover .block__row-icons {
   opacity: 1;
 }
 .block__wrapper {
