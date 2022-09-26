@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=block');
+:root{
+  --c-white: #fff;
+  --c-light-grey: #9B96AC;
+  --c-grey: #4a4f56;
+  --c-hight-grey: #3b3f45;
+  --c-dark-grey: #88839E;
+  --c-good-grey: #625E77;
+  --c-two-grey: #7A7593;
+  --c-orange: #FF8984;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  color: var(--c-white);
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  background-color: var(--c-hight-grey);
+}
+.header{
+  margin-bottom: 20px;
+}
+.main{
+  margin-bottom: 45px;
+}
+.footer{
+  margin-bottom: 45px;
+}
+/* BANNER */
+.banner {
+  background-color: var(--c-grey);
+  color: #ff8984;
+  text-align: center;
+  padding-top: 19px;
+  padding-bottom: 12px;
+}
+.banner__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 4px;
+}
+.banner__description {
+  line-height: 19px;
+  font-size: 16px;
+}
+.wrapper {
+  width: 100%;
+  max-width: 564px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+/* PONITS */
+.points__list{
+  margin: 0;
+  list-style: none;
+}
+.points__label{
+  height: 45px;
+  padding: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: var(--c-dark-grey);
+  transition: all .2s;
+}
+.points__item:nth-child(2n) .points__label{
+  background-color: var(--c-two-grey);
+}
+.points__item:hover .points__label{
+  border-top: 3px solid var(--c-white);
+  border-bottom: 3px solid var(--c-white);
+  background: var(--c-good-grey);
+}
+.points__check {
+  margin-right: 16px;
+  cursor: pointer;
+}
+.points__check:checked ~ span {
+	text-decoration: line-through;
+  color: var(--c-light-grey);
+}
+.points__title {
+  font-size: 18px;
+  margin-right: 5px;
+}
+.points__description{
+  font-size: 11px;
+}
+/* BUTTONS */
+.button{
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--c-grey);
+  border: 0;
+  width: 100%;
+  color: var(--c-orange);
+  cursor: pointer;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.button__text{
+  font-size: 18px;
+}
+.button-home{
+  position: fixed;
+  left: 15px;
+  top: 10px;
+  width: fit-content;
+  background-color: var(--c-white);
