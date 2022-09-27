@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Завдання №12 – FORMS</title>
+    <!-- STYLE -->
+    <link rel="stylesheet" href="./index.min.css" />
+    <!-- ICON -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- * HEADER -->
+      <header class="header">
+        <div class="wrapper">
+          <!--  -->
+        </div>
+      </header>
+      <!-- * MAIN -->
+      <div class="main">
+        <div class="wrapper main__wrapper">
+          <!-- LEFT FORM -->
+          <form class="form" method="get">
+            <!-- FORM HEAD -->
+            <div class="form__head">
+              <h2 class="title">Create an Account</h2>
+            </div>
+            <!-- FORM CONTENT -->
+            <div class="form__content">
+              <div class="form__double-field">
+                <!-- FIRST NAME -->
+                <label class="field">
+                  <div class="field__title">First Name</div>
+                  <input class="field__input" type="text" name="first-name" />
+                  <div class="form__error">error</div>
+                </label>
+                <!-- LAST NAME -->
+                <label class="field">
+                  <div class="field__title">Last Name</div>
+                  <input class="field__input" type="text" name="last-name" />
+                  <div class="form__error">error</div>
+                </label>
+              </div>
+              <!-- EMAIL -->
+              <label class="field field--email">
+                <div class="field__title">Email</div>
+                <input class="field__input" type="text" name="email" />
+                <div class="form__error form__error--gray">
+                  We'll never share your email with anyone else.
+                </div>
+              </label>
+              <!-- GENDER -->
+              <div class="form__radio-items">
+                <!-- MALE -->
+                <div class="gender">
+                  <label class="gender__item">
+                    <input
+                      class="gender__input"
+                      type="radio"
+                      value="male"
+                      name="gender"
+                      checked
+                    />
+                    <!-- CIRCLE -->
+                    <span class="gender__circle">
+                      <span class="gender__circle--small"></span>
+                    </span>
+                    <span class="gender__title">Male</span>
+                  </label>
+                  <div class="form__error">error</div>
+                </div>
+                <!-- FEMALE -->
+                <div class="gender">
+                  <label class="gender__item">
+                    <input
+                      class="gender__input"
+                      type="radio"
+                      value="female"
+                      name="gender"
+                    />
+                    <!-- CIRCLE -->
+                    <span class="gender__circle">
+                      <span class="gender__circle--small"></span>
+                    </span>
+                    <span class="gender__title">Female</span>
+                  </label>
+                  <div class="form__error">error</div>
+                </div>
+              </div>
+              <div class="form__double-field">
+                <!-- COUNTRY -->
+                <label class="field__item">
+                  <div class="field__title">Country</div>
+                  <select
+                    class="field__input field__input--select"
+                    name="country"
+                  >
+                    <option hidden disabled selected value>Select</option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="Poland">Poland</option>
+                  </select>
+                  <div class="form__error">error</div>
+                </label>
+                <!-- CITY -->
+                <label class="field__item">
+                  <div class="field__title">City</div>
+                  <input class="field__input" type="text" name="city" />
+                  <div class="form__error">error</div>
+                </label>
+              </div>
+              <!-- BUTTON -->
+              <button class="button" type="submit"><span>Sign Up</span></button>
+              <div class="form__error">error</div>
+              <!-- CONFIRM -->
+              <div class="confirm">
+                <p class="confirm__description">
+                  By clicking the 'Sign Up' button, you confirm that you accept
+                  our <br /><a href="#" class="confirm__link">Terms of Use</a>
+                  and <a href="#" class="confirm__link">Privacy Policy</a>.
+                </p>
+              </div>
+            </div>
+            <div class="form__footer">
+              <!-- LOGIN -->
+              <div class="login">
+                <div class="login__title">Have an account?</div>
+                <a href="#" class="login__link">Log In</a>
+              </div>
+            </div>
+          </form>
+          <!-- RIGHT FORM -->
+          <form class="form" method="get">
+            <!-- FORM HEAD -->
+            <div class="form__head">
+              <h2 class="title">Profile</h2>
+            </div>
+            <div class="form__content">
+              <!-- AVATAR -->
+              <div class="avatar">
+                <div class="avatar__photo">
+                  <img class="avatar__image" src="./assets/images/user.jpg" />
+                </div>
+                <div class="avatar__field">
+                  <div class="avatar__block">
+                    <label class="avatar__upload">
+                      <span class="avatar__visual avatar__visual--input"
+                        ><img
+                          class="avatar__image-small"
+                          src="./assets/images/camera.png"
+                          alt=""
+                      /></span>
+                      <input class="avatar__input" type="file" />
+                    </label>
+                    <button class="avatar__button" type="reset">
+                      <span class="avatar__visual"
+                        ><img
+                          class="avatar__image-small"
+                          src="./assets/images/trash.png"
+                          alt=""
+                      /></span>
+                    </button>
+                  </div>
+                  <div class="form__error form__error--gray">
+                    Up to 1 MB (300x300 px)
+                  </div>
+                </div>
+              </div>
+              <div class="form__double-field">
+                <!-- FIRST NAME -->
+                <label class="field">
+                  <div class="field__title">First Name</div>
+                  <input class="field__input" type="text" name="first-name" />
+                  <div class="form__error">error</div>
+                </label>
+                <!-- LAST NAME -->
+                <label class="field">
+                  <div class="field__title">Last Name</div>
+                  <input class="field__input" type="text" name="last-name" />
+                  <div class="form__error">error</div>
+                </label>
+                <!-- COUNTRY -->
+                <label class="field__item">
+                  <div class="field__title">Country</div>
+                  <select class="field__input field__input--select" name="country">
+                    <option hidden disabled selected value>Select</option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="Poland">Poland</option>
+                  </select>
+                  <div class="form__error">error</div>
+                </label>
+                <!-- CITY -->
+                <label class="field__item">
+                  <div class="field__title">City</div>
+                  <input class="field__input" type="text" name="city" />
+                  <div class="form__error">error</div>
+                </label>
+                <!-- FIRST NAME -->
+                <label class="field">
+                  <div class="field__title">First Name</div>
+                  <input class="field__input" type="text" name="first-name"/>
+                  <div class="form__error">error</div>
+                </label>
+                <!-- LAST NAME -->
+                <label class="field">
+                  <div class="field__title">Last Name</div>
+                  <input class="field__input" type="text" name="last-name"/>
+                  <div class="form__error">error</div>
+                </label>
+              </div>
+              <!-- BUTTON -->
+              <button class="button button--small" type="submit">
+                <span>Sign Up</span>
+              </button>
+              <div class="form__error">error</div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- * FOOTER -->
+      <footer class="footer">
+        <div class="wrapper">
+          <a href="../index.html" class="button button--small go-home">На головну</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
