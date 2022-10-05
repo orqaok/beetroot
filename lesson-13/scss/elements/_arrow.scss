@@ -1,0 +1,19 @@
+.arrow {
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    color: $c-dark-grey;
+    text-decoration: none;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+  }
+  &__image {
+    max-height: 12px;
+    width: auto;
+    margin-left: 20px;
+  }
+}

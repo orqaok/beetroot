@@ -1,0 +1,37 @@
+// _burger.scss
+.burger {
+  background-color: $c-tr;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 8px;
+  padding: 5px;
+  height: 34px;
+  width: 34px;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  &__line {
+    width: 34px;
+    display: block;
+    border-bottom: 2px solid;
+
+  }
+  &--open {
+    & .burger__line{
+      transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      position: absolute;
+      &:nth-of-type(1) {
+        transform: rotate(45deg);
+      }
+      &:nth-of-type(2) {
+        display: none;
+      }
+      &:nth-of-type(3) {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}

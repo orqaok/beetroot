@@ -1,0 +1,17 @@
+// _blog.scss
+.blog {
+  &__title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.05em;
+    @media (max-width: $mob) {
+      text-align: center;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 50px;
+  }
+}

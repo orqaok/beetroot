@@ -1,0 +1,61 @@
+// _popular.scss
+.popular {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 50px;
+    @media (max-width: $tablet) {
+      grid-gap: 30px;
+    }
+  }
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-row-gap: 10px;
+  }
+  &__content {
+    display: flex;
+    grid-gap: 30px;
+    @media (max-width: $mob) {
+      flex-direction: column;
+      grid-gap: 50px;
+    }
+    & .card__caption {
+      @media (max-width: $tablet) {
+        margin-bottom: 20px;
+      }
+      @media (max-width: $mob) {
+        margin-bottom: 10px;
+      }
+    }
+    & .card {
+      @media (max-width: $mob) {
+        grid-row-gap: 20px;
+      }
+    }
+    & .card__title {
+      @media (max-width: $mob) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+  }
+  &__link {
+    font-family: $ff-base;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: $c-dark-grey;
+  }
+  &__button {
+    text-align: center;
+  }
+}

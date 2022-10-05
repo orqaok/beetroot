@@ -1,0 +1,11 @@
+mixin popular()
+  section.popular
+    .wrapper.popular__wrapper
+      .popular__head
+        h3.popular__title The Most Popular
+        +arrow('View All')
+      .popular__content
+        +card('./assets/images/pop-lamp.jpg','Interface Design','8 June, 2020','Mentorship Match — How a simple LinkedIn feature can boost diversity','LinkedIn is on a clear mission to make professionals more successful by connecting the global workforce and as we learned — diversity and success go hand in hand')
+        +card('./assets/images/pop-arrow.jpg','Visual Design','8 June, 2020','Creativity vs. UX','Is it possible to create a delightful user experience without following best UX practices?')
+      .popular__button
+        +button('Load More')

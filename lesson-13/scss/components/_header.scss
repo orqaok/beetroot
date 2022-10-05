@@ -1,0 +1,42 @@
+// _header.scss
+.header {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    height: $height-header;
+    justify-content: space-between;
+    grid-column-gap: 30px;
+    @media (max-width: 768px) {
+      height: 60px;
+    }
+  }
+  &__menu {
+    display: block;
+    @media (max-width: 768px) {
+      display: none;
+    }
+    &--open {
+      display: block;
+    }
+  }
+
+  &__burger {
+    display: none;
+    @media (max-width: $tablet) {
+      display: block;
+    }
+  }
+
+  &__navigation {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    grid-column-gap: 80px;
+    @media (max-width: 1200px) {
+      grid-column-gap: 40px;
+    }
+    @media (max-width: $mob) {
+      grid-column-gap: 20px;
+    }
+  }
+}

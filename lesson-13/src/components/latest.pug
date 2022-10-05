@@ -1,0 +1,10 @@
+mixin latest()
+  section.latest
+    .wrapper.latest__wrapper
+      .latest__head
+        h3.latest__title Latest Posts
+        +arrow('View All')
+      .latest__content
+        +card('./assets/images/latest-lamp.jpg','Interface Design','8 June, 2020','UX traffic light colours','UI has to make a huge visual difference between warning, an alert and a success.')
+        +card('./assets/images/latest-arrow.jpg','Technology','6 May, 2020','Using UX Design to Build a Sustainable Future','UI has to make a huge visual difference between warning, an alert and a success.')
+        +card('./assets/images/latest-roof.jpg','Visual Design','8 June, 2020','Creativity vs. UX','Is it possible to create a delightful user experience without following best UX practices?')

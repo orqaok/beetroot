@@ -1,0 +1,17 @@
+// _button.scss
+.button {
+  cursor: pointer;
+  background-color: $c-grey;
+  border: 0;
+  padding-left: 45px;
+  padding-right: 45px;
+  height: 46px;
+  &__text {
+    font-family: $ff-lato;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: $c-white;
+  }
+}

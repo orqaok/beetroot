@@ -1,0 +1,10 @@
+mixin card(src,autor,data,title,descr)
+  .card
+    .card__galery
+      img.card__image(src=src, alt="title")
+    .card__info 
+      .card__caption
+        span.card__autor= autor
+        span.card__data= data
+      a.card__title(href="#")= title
+      p.card__description= descr

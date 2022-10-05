@@ -1,0 +1,52 @@
+// _menu.scss
+.menu {
+  @media (max-width: $tablet) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $c-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    grid-column-gap: 40px;
+    @media (max-width: $tablet) {
+      grid-column-gap: 30px;
+    }
+    @media (max-width: $tablet) {
+      flex-direction: column;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: $c-black;
+    font-family: $ff-lato;
+    position: relative;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    &::before {
+      border-bottom: 1px solid;
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 8px;
+      right: calc(8px + 0.3em);
+      opacity: 0;
+      transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &:hover:before {
+      opacity: 1;
+    }
+  }
+}
