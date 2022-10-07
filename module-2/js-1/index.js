@@ -11,7 +11,7 @@ let age = prompt(`Скілки тобі років? ${f_name}`);
 
 let today = new Date().getFullYear();
 
-let born = prompt("Дата народження?");
+let born = prompt("Рік народження?");
 
 let yearsNow = today - born;
 
