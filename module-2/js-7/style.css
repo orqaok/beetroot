@@ -1,0 +1,76 @@
+.some {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.some__colors {
+  background-color: #333;
+  padding: 10px 15px;
+}
+.some__round {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  border: 3px solid gray;
+  border-radius: 50%;
+  background-color: #aaa;
+}
+.some__round--red {
+  background-color: red;
+}
+.some__round--orange {
+  background-color: orange;
+}
+.some__round--green {
+  background-color: green;
+}
+.some__btn {
+  display: flex;
+  height: 25px;
+  max-width: 25px;
+  width: 50px;
+  border: 3px solid gray;
+  background-color: #aaa;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+.some__btn:hover {
+  opacity: 0.6;
+  color: black;
+}
+
+.modal {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+.modal__body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+}
+.modal__content {
+  background-color: #fff;
+  max-width: 800px;
+  padding: 15px 30px;
+  position: relative;
+}
+.modal__open {
+  display: block;
+}
+.modal__title {
+  font-size: 30px;
+  margin-bottom: 1rem;
+}
+.modal__close {
+  position: absolute;
+  right: 30px;
+  top: 15px;
+}/*# sourceMappingURL=style.css.map */

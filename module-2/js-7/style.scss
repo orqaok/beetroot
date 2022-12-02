@@ -1,0 +1,76 @@
+.some {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__colors {
+    background-color: #333;
+    padding: 10px 15px;
+  }
+  &__round {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    border: 3px solid gray;
+    border-radius: 50%;
+    background-color: #aaa;
+    &--red {
+      background-color: red;
+    }
+    &--orange {
+      background-color: orange;
+    }
+    &--green {
+      background-color: green;
+    }
+  }
+  &__btn {
+    display: flex;
+    height: 25px;
+    max-width: 25px;
+    width: 50px;
+    border: 3px solid gray;
+    background-color: #aaa;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.6;
+      color: black;
+    }
+  }
+}
+
+.modal {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  &__body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+  }
+  &__content{
+    background-color: #fff;
+    max-width: 800px;
+    padding: 15px 30px;
+    position: relative;
+  }
+  &__open{
+    display: block;
+  }
+  &__title{
+    font-size: 30px;
+    margin-bottom: 1rem;
+  }
+  &__close{
+    position: absolute;
+    right: 30px;
+    top: 15px;
+  }
+}
